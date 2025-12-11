@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Impera</title>
+    <meta name="description" content="Venha já conhecer IMPERA em Campos do Jordão!!">
+    
+    <style>
+        body { margin: 0; font-family: Arial, Helvetica, sans-serif; }
+
+        .cabecalho {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+        }
+
+        .logo-texto {
+            color: #ffc107; 
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none; 
+            margin-left: 15px;
+            font-size: 14px;
+        }
+
+        .banner {
+            position: relative; 
+            width: 100%;
+            height: 500px;
+            overflow: hidden; 
+        }
+
+        .banner-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            object-position: center;
+        }
+
+        .banner-conteudo {
+            position: absolute; 
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        .titulo-amarelo {
+            color: #ffc107; 
+            font-size: 30px; 
+            margin-bottom: 10px;
+            font-style: italic;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        .subtitulo-branco {
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        .galeria-section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: black; 
+        }
+
+        .galeria-section h3 {
+            font-size: 28px;
+            margin-bottom: 40px;
+            color: white; 
+        }
+
+        .galeria-grid {
+            display: flex; 
+            justify-content: center;
+            gap: 20px; 
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap; 
+        }
+
+        .foto-item {
+            width: 200px; 
+            text-align: left;
+            background-color: white; 
+            box-shadow: 0 4px 8px rgba(255,255,255,0.1); 
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .foto-item img {
+            width: 100%;
+            height: 120px; 
+            object-fit: cover; 
+        }
+
+        .foto-descricao {
+            padding: 10px;
+        }
+
+        .foto-descricao p {
+            font-size: 12px;
+            color: #555;
+            margin: 0;
+        }
+        
+        .rodape {
+            background-color: #0d0d0d; 
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .rodape-grid {
+            display: flex;
+            justify-content: space-around; 
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: left;
+            flex-wrap: wrap;
+        }
+
+        .rodape-coluna {
+            width: 250px; 
+            margin: 10px 0;
+        }
+
+        .rodape-coluna h4 {
+            color: #ffc107; 
+            font-size: 16px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .rodape-coluna p, .rodape-coluna a {
+            font-size: 14px;
+            color: #ccc;
+            text-decoration: none;
+            line-height: 1.5;
+            display: block; 
+        }
+
+        .barra-cookies {
+            position: fixed; 
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            padding: 15px;
+            text-align: center;
+            border-top: 1px solid #ccc;
+            z-index: 1000;
+        }
+
+        .botao-aceitar {
+            background-color: #ffc107;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            color: black;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cabecalho">
+        <nav class="menu">
+            <a href="https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D12988800173%26utm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnf-oEaThjyFaTc6yhmcxA7ucm87vlM5PETalCDtH-aQT541s8ICkIPABpSBE_aem_KlUZz-I_UTRblm2908-KMg&e=AT1GFsqL4Dyn2EBcg_ygwZ1RHn-nNswf5F8Vn9jxNrY82DS_fqh0DWAbRsWyyNNUJKPUu3PRB28FoVmjDtFo7iXf35TAdT9Dj9fzwPDq6g" target="_blank">Whatsapp</a>
+        </nav>
+
+        <div class="logo-texto">Impera - Campos do jordão SP</div>
+
+        <nav class="menu">
+            <a href="https://www.airbnb.com.br/users/show/368189830?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnb8Imh_sSYCfn9BVN8dj7uAyb_MD1Yv9WSFf66Qj8Ufw7egHhTmxKJmobciU_aem_zWVYOp2_FckdkDWYa00NsQ" target="_blank">Air BNB</a>
+        </nav>
+    </div>
+
+    <div class="banner">
+        <img src="Gestão.png" alt="Imagem de Fundo do Hotel" class="banner-img">
+
+        <div class="banner-conteudo">
+            <h1 class="titulo-amarelo">Lazer e relaxamento.</h1>
+            
+            <h2 class="subtitulo-branco">Agende sua diária!</h2>
+        </div>
+    </div>
+
+    <section class="galeria-section">
+        
+        <h3>Conheça Nossos Espaços</h3>
+
+        <div class="galeria-grid">
+            
+            <div class="foto-item">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipPR9iZKVFigDXIaaXmS2k1sc0VgD7JbedfVC5X1=s680-w680-h510-rw" alt="Parte de fora">
+                <div class="foto-descricao">
+                    <p> Parte de fora</p>
+                    <p style="font-size: 10px; color: #aaa;">Detalhe do local</p>
+                </div>
+            </div>
+
+            <div class="foto-item">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipNeDtJqUmKlCCzZ8SMndu2VuGydYdLgTJWdh8RV=s680-w680-h510-rw" alt="Interior quarto"> 
+                <div class="foto-descricao">
+                    <p>Interior quarto</p>
+                    <p style="font-size: 10px; color: #aaa;">Detalhe do local</p>
+                </div>
+            </div>
+
+            <div class="foto-item">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipPgJZyFDJLm6eKqbZqBq_C_Gi9rhi1Quc3Nb-92=s680-w680-h510-rw" alt="Vista">
+                <div class="foto-descricao">
+                    <p>Vista</p>
+                    <p style="font-size: 10px; color: #aaa;">Detalhe do local</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="rodape-grid">
+            
+            <div class="rodape-coluna">
+                <h4>Contato</h4>
+                <p>Telefone: (12) 98880-0173</p>
+            </div>
+
+            <div class="rodape-coluna">
+                <h4>Localização</h4>
+                <p>Pousada Impera, Av. Escocia, 122 - Vila Nova, </p>
+                <p>Campos do Jordão, SP</p>
+                <p>CEP: 11460-400</p>
+            </div>
+            
+            <div class="rodape-coluna">
+                <h4>Redes Sociais</h4>
+                <a href="https://www.instagram.com/pousadaimpera/" target="_blank" style="display: flex; align-items: center; margin-bottom: 10px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="Instagram Icon" style="width: 20px; height: 20px; border-radius: 5px; margin-right: 8px;"> 
+                    @pousadaimpera
+                </a>
+                <p>Siga-nos para mais fotos!</p>
+            </div>
+
+        </div>
+        <p style="font-size: 12px; margin-top: 20px;">© 2025 Impera. Todos os direitos reservados.</p>
+    </footer>
+
+    <div class="barra-cookies" id="cookie-box">
+        Nós usamos cookies para melhorar o site. 
+        <button class="botao-aceitar" onclick="aceitarCookies()">ACEITAR</button>
+    </div>
+
+    <script>
+        function aceitarCookies() {
+            var caixaCookies = document.getElementById('cookie-box');
+            caixaCookies.style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
